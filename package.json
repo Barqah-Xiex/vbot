@@ -1,0 +1,43 @@
+{
+  "name": "vbot",
+  "version": "2.0.0",
+  "description": "Brainxiex Virtual Bot",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barqah-Xiex/vbot.git"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "Barqah-Xiex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barqah-Xiex/vbot/issues"
+  },
+  "homepage": "https://github.com/Barqah-Xiex/vbot#readme",
+  "dependencies": {
+    "@adiwajshing/baileys": "github:umbrella-studio/Baileys-test",
+    "@prisma/client": "^5.1.1",
+    "@whiskeysockets/baileys": "^6.4.0",
+    "awesome-phonenumber": "^5.2.0",
+    "axios": "^1.3.4",
+    "chalk": "^5.2.0",
+    "cheerio": "^1.0.0-rc.12",
+    "child-process": "^1.0.2",
+    "crypto": "^1.0.1",
+    "exif": "^0.6.0",
+    "fs": "^0.0.1-security",
+    "image-to-base64": "^2.2.0",
+    "qrcode": "^1.5.1",
+    "qrcode-terminal": "^0.12.0",
+    "yargs": "^17.7.1"
+  },
+  "devDependencies": {
+    "prisma": "^5.1.1"
+  }
+}
