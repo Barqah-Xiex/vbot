@@ -24,7 +24,7 @@ async function message(liana, m, store) {
                     editMessage(mek,`${message}. mohon cari terlebih dahulu menggunakan *${Prefix}fitur-search*`);
                 }
             }
-            await editMessage(mek,`Sepertinya semua sudah terpasang coba ${Prefix}restart`);
+            await nyarios(`Sepertinya semua sudah terpasang coba ${Prefix}restart`);
             return;
         }
         const {data: {status,message,name,body}} = await axios.post(`http://xiex.my.id/vbot-get?name=${arg}`);
