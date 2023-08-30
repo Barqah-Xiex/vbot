@@ -23,13 +23,13 @@ privatechat: false,
 
 session: `session`,
 
-apikey: `BarqahgantengBanget`,
+apikey: `BarqahTanvanSekali`,
 
 debug: false,
 
 Brainxiex_Database: {
-    username: "Barqah",
-    password: "BarqahgantengBanget"
+    username: "user",
+    password: "user"
 },
 
 
