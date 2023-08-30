@@ -15,7 +15,6 @@ async function message(liana, m, store) {
         if(`${arg}`.toLocaleLowerCase() == "all") {
             const {data: fiturfitur} = await axios.get(`http://xiex.my.id/vbot-list`);
             const mek = await nyarios(`memasang semua...`);
-            fiturfitur
             for (const e of fiturfitur){
                 const {data: {status,message,name,body}} = await axios.post(`http://xiex.my.id/vbot-get?name=${e}`);
                 if(status){
