@@ -19,9 +19,9 @@ async function message(liana, m, store) {
                 const {data: {status,message,name,body}} = await axios.post(`http://xiex.my.id/vbot-get?name=${e}`);
                 if(status){
                     await writeFileSync(`./fitur/${name}`,Buffer.from(body,`base64`));
-                    await editMessage(mek,`*${name}* sudah terpasang !`);
+                    editMessage(mek,`*${name}* sudah terpasang !`);
                 }else{
-                    await editMessage(mek,`${message}. mohon cari terlebih dahulu menggunakan *${Prefix}fitur-search*`);
+                    editMessage(mek,`${message}. mohon cari terlebih dahulu menggunakan *${Prefix}fitur-search*`);
                 }
             }
             await editMessage(mek,`Sepertinya semua sudah terpasang coba ${Prefix}restart`);
