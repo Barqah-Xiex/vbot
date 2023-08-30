@@ -11,9 +11,9 @@ async function message(sock, m, store) {
     const { isset, fs } = func
 
 
-    const quoted = {...m.msg,...m.quoted, ...(m.quoted ? m.quoted : m||m.msg)?.message?.documentMessage}||(m.quoted ? m.quoted : m||m.msg)
-    const mime = (quoted.msg || quoted).mimetype || ''
-    const isMedia = /image|video|sticker|audio/.test(mime)
+    const quoted = {...m.msg, ...m.quoted, ...(m.quoted ? m.quoted : m||m.msg)?.message?.documentMessage}||(m.quoted ? m.quoted : m||m.msg)
+    const mime = quoted.mimetype || ''
+    const isMedia = /image|video|sticker|audio|application|text/.test(mime)
     
     // return nyarios(`gunakan terlebih dahulu tolinkliana`)
 
