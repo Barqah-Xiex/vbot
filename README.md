@@ -1,5 +1,6 @@
 # VBOT
 Virtual Bot By Brainxiex Development
+Created By Liana Putri
 
 
 # Instalasi Di Android
