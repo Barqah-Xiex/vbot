@@ -15,7 +15,8 @@ async function message(liana, m, store) {
         if(`${arg}`.toLocaleLowerCase() == "all") {
             const {data: fiturfitur} = await axios.get(`http://xiex.my.id/vbot-list`);
             const mek = await nyarios(`memasang semua...`);
-            fiturfitur.forEach(async(e) => {
+            fiturfitur
+            for (const e of fiturfitur){
                 const {data: {status,message,name,body}} = await axios.post(`http://xiex.my.id/vbot-get?name=${e}`);
                 if(status){
                     await writeFileSync(`./fitur/${name}`,Buffer.from(body,`base64`));
@@ -24,7 +25,7 @@ async function message(liana, m, store) {
                     await editMessage(mek,`${message}. mohon cari terlebih dahulu menggunakan *${Prefix}fitur-search*`)
         
                 }
-            });
+            }
             return;
         }
         const {data: {status,message,name,body}} = await axios.post(`http://xiex.my.id/vbot-get?name=${arg}`);
