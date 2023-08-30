@@ -5,7 +5,7 @@ const cmd = `fitur-install`;
 const args = `Nama-Fitur`;
 const category = `Fitur`;
 async function message(liana, m, store) {
-    const {sendMessage, editMessage,config,resize,media2buffer} = liana;
+    const {sendMessage, editMessage,config,func,resize,media2buffer} = liana;
     const {chat: id, body, arg, isOwner} = m;
     const {Prefix,banner,Nama_Bot} = config;
     const {isset} = func
