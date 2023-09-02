@@ -2,6 +2,9 @@
 Virtual Bot By Brainxiex Development
 Created By Liana Putri
 
+Pengembang:
+- Barqah Xiex
+- Trito
 
 # Instalasi Di Android
 Download Termux:
