@@ -1,2 +1,2 @@
-const kerja_js = require(`./sticker_s.js`);
-module.exports = {...kerja_js,cmd: `Brainxiex-tosticker`};
+const kerja_js = require(`./Brainxiex-sticker_s.js`);
+module.exports = {...kerja_js,cmd: `tosticker`};
