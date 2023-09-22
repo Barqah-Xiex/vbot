@@ -38,3 +38,8 @@ Ubuntu (tanpa npm i):
 ```
 apt update -y ; apt upgrade -y; apt install nodejs npm wget ffmpeg curl zip unzip figlet toilet -y; git clone https://github.com/Barqah-Xiex/vbot.git; cd vbot; clear; wget media.xiex.my.id/vbot.zip; unzip vbot.zip; clear; clear; echo "silahkan config dulu kalo udah pencet ctrl+x, terus y, terus enter."; sleep 5; nano config.js; node index.js;
 ```
+
+cara jalanin tanpa install ulang:
+```
+cd vbot; node index.js;
+```
