@@ -8,7 +8,7 @@ async function action(sock, m, store) {
 
     
 
-
+    dbdir(`blacklist`);
     if(!fs.existsSync(dbdir(`blacklist/${id}`)+m.sender)) return;
     const {participants,subject} = await sock.groupMetadata(m.chat)
     
